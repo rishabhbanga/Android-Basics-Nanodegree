@@ -18,89 +18,63 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp">
+        android:layout_alignParentStart="true">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-        <TextView
-            android:text="Team A"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:id="@+id/TeamAtv"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"/>
+            <TextView
+                android:text="@string/team_a"
+                android:id="@+id/TeamAtv"
+                style="@style/titletextstyle"/>
+
+            <TextView
+                android:id="@+id/ScoreAtv"
+                android:text="@string/initalscore"
+                style="@style/scoretextstyle"
+                android:layout_marginLeft="24dp"
+                android:layout_below="@id/TeamAtv"
+                android:layout_alignLeft="@id/TeamAtv"
+                android:layout_alignStart="@id/TeamAtv"/>
+
+            <Button
+                android:text="@string/threepoints"
+                android:id="@+id/threepointsAbttn"
+                android:onClick="onScoreA"
+                style="@style/buttonstyle"
+                android:layout_below="@id/ScoreAtv"
+                android:layout_alignLeft="@id/TeamAtv"
+                android:layout_alignStart="@id/TeamAtv"/>
+
+            <Button
+                android:text="@string/twopoints"
+                android:id="@+id/twopointsAbttn"
+                style="@style/buttonstyle"
+                android:onClick="onScoreA"
+                android:layout_below="@id/threepointsAbttn"
+                android:layout_alignLeft="@id/threepointsAbttn"
+                android:layout_alignStart="@id/threepointsAbttn" />
+
+            <Button
+                android:text="@string/onepoint"
+                android:id="@+id/onepointAbttn"
+                android:onClick="onScoreA"
+                style="@style/buttonstyle"
+                android:layout_below="@id/twopointsAbttn"
+                android:layout_alignLeft="@id/twopointsAbttn"
+                android:layout_alignStart="@id/twopointsAbttn" />
+
+             </RelativeLayout>
 
         <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:id="@+id/ScoreAtv"
-            android:textSize="56sp"
-            android:textColor="@color/colorAccent"
-            android:layout_below="@+id/TeamAtv"
-            android:layout_alignLeft="@+id/TeamAtv"
-            android:layout_alignStart="@+id/TeamAtv"
-            android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp" />
-
-        <Button
-            android:text="Goal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/GoalAbttn"
-            android:background="@color/colorPrimary"
-            android:textStyle="bold"
-            android:onClick="onScoreA"
-            android:layout_marginTop="22dp"
-            android:layout_below="@+id/ScoreAtv"
-            android:layout_alignLeft="@+id/TeamAtv"
-            android:layout_alignStart="@+id/TeamAtv" />
-
-        <Button
-            android:text="Free Kick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/FreeKickAbttn"
-            android:background="@color/colorPrimary"
-            android:textStyle="bold"
-            android:onClick="onScoreA"
-            android:layout_marginTop="27dp"
-            android:layout_below="@+id/GoalAbttn"
-            android:layout_alignLeft="@+id/GoalAbttn"
-            android:layout_alignStart="@+id/GoalAbttn" />
-
-        <Button
-            android:text="Penalty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/PenaltyAbttn"
-            android:background="@color/colorPrimary"
-            android:textStyle="bold"
-            android:onClick="onScoreA"
-            android:layout_marginTop="27dp"
-            android:layout_below="@+id/FreeKickAbttn"
-            android:layout_alignLeft="@+id/FreeKickAbttn"
-            android:layout_alignStart="@+id/FreeKickAbttn" />
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="1.2dp"
-            android:layout_height="372dp"
+            android:layout_width="1.4dp"
+            android:layout_height="362dp"
+            android:layout_marginLeft="8dp"
             android:background="@android:color/darker_gray"/>
 
         <RelativeLayout
@@ -109,88 +83,62 @@
             android:layout_weight="1">
 
             <TextView
-                android:text="Team B"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="50dp"
-                android:layout_marginStart="47dp"
-                android:layout_marginTop="16dp"
+                android:text="@string/team_b"
                 android:id="@+id/TeamBtv"
-                android:textSize="20sp"
-                android:textColor="@android:color/black"/>
+                style="@style/titletextstyle"/>
 
             <TextView
-                android:text="0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:id="@+id/ScoreBtv"
-                android:gravity="center_vertical"
-                android:textSize="56sp"
-                android:paddingLeft="22dp"
-                android:textColor="@color/colorAccent"
-                android:layout_below="@+id/TeamBtv"
-                android:layout_alignLeft="@+id/TeamBtv"
-                android:layout_alignStart="@+id/TeamBtv"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="2dp" />
+                android:text="@string/initalscore"
+                android:layout_marginLeft="2dp"
+                style="@style/scoretextstyle"
+                android:layout_below="@id/TeamBtv"
+                android:layout_alignLeft="@id/TeamBtv"
+                android:layout_alignStart="@id/TeamBtv"
+                android:layout_alignRight="@+id/TeamBtv"
+                android:layout_alignEnd="@+id/TeamBtv" />
 
             <Button
-                android:text="Goal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/GoalBbttn"
-                android:background="@color/colorPrimary"
-                android:textStyle="bold"
+                android:text="@string/threepoints"
+                android:id="@+id/threepointsBbttn"
+                style="@style/buttonstyle"
                 android:onClick="onScoreB"
-                android:layout_marginTop="24dp"
-                android:layout_below="@+id/ScoreBtv"
-                android:layout_alignLeft="@+id/ScoreBtv"
-                android:layout_alignStart="@+id/ScoreBtv" />
+                android:layout_below="@id/ScoreBtv"
+                android:layout_alignLeft="@id/ScoreBtv"
+                android:layout_alignStart="@id/ScoreBtv" />
 
             <Button
-                android:text="Free Kick"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/FreeKickBbttn"
-                android:background="@color/colorPrimary"
-                android:textStyle="bold"
+                android:text="@string/twopoints"
+                android:id="@+id/twopointsBbttn"
+                style="@style/buttonstyle"
                 android:onClick="onScoreB"
-                android:layout_marginTop="27dp"
-                android:layout_below="@+id/GoalBbttn"
-                android:layout_alignLeft="@+id/GoalBbttn"
-                android:layout_alignStart="@+id/GoalBbttn" />
+                android:layout_below="@id/threepointsBbttn"
+                android:layout_alignLeft="@id/threepointsBbttn"
+                android:layout_alignStart="@id/threepointsBbttn" />
 
             <Button
-                android:text="Penalty"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/PenaltyBbttn"
-                android:background="@color/colorPrimary"
-                android:textStyle="bold"
+                android:text="@string/onepoint"
+                android:id="@+id/onepointBbttn"
+                style="@style/buttonstyle"
                 android:onClick="onScoreB"
-                android:layout_marginTop="27dp"
-                android:layout_below="@+id/FreeKickBbttn"
-                android:layout_alignLeft="@+id/FreeKickBbttn"
-                android:layout_alignStart="@+id/FreeKickBbttn" />
+                android:layout_below="@id/twopointsBbttn"
+                android:layout_alignLeft="@id/twopointsBbttn"
+                android:layout_alignStart="@id/twopointsBbttn" />
 
-        </RelativeLayout>
+         </RelativeLayout>
 
-      </LinearLayout>
+    </LinearLayout>
 
-        <Button
-            android:text="Reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Resetbttn"
-            android:background="@color/colorAccent"
-            android:textStyle="bold"
-            android:onClick="onReset"
-            android:layout_below="@+id/scorelayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp" />
+    <Button
+        android:text="@string/reset"
+        android:id="@+id/Resetbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:onClick="onReset"
+        android:layout_below="@id/scorelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 
 </RelativeLayout>

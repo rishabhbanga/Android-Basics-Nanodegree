@@ -22,51 +22,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         performs click.
         */
 
-        Button GoalA = (Button) findViewById(R.id.GoalAbttn);
-        GoalA.setOnClickListener(this);
-        Button FreeKickA = (Button) findViewById(R.id.FreeKickAbttn);
-        FreeKickA.setOnClickListener(this);
-        Button PenaltyA = (Button) findViewById(R.id.PenaltyAbttn);
-        PenaltyA.setOnClickListener(this);
+        Button ThreePointsA = (Button) findViewById(R.id.threepointsAbttn);
+        ThreePointsA.setOnClickListener(this);
+        Button TwoPointsA = (Button) findViewById(R.id.twopointsAbttn);
+        TwoPointsA.setOnClickListener(this);
+        Button OnePointA = (Button) findViewById(R.id.onepointAbttn);
+        OnePointA.setOnClickListener(this);
 
-        Button GoalB = (Button) findViewById(R.id.GoalBbttn);
-        GoalB.setOnClickListener(this);
-        Button FreeKickB = (Button) findViewById(R.id.FreeKickBbttn);
-        FreeKickB.setOnClickListener(this);
-        Button PenaltyB = (Button) findViewById(R.id.PenaltyBbttn);
-        PenaltyB.setOnClickListener(this);
+        Button ThreePointsB = (Button) findViewById(R.id.threepointsBbttn);
+        ThreePointsB.setOnClickListener(this);
+        Button TwoPointsB = (Button) findViewById(R.id.twopointsBbttn);
+        TwoPointsB.setOnClickListener(this);
+        Button OnePointB = (Button) findViewById(R.id.onepointBbttn);
+        OnePointB.setOnClickListener(this);
     }
 
     public void onClick(View v) {
 
         switch (v.getId()) {
 
-            case R.id.GoalAbttn:
+            case R.id.threepointsAbttn:
+                ScoreTeamA = ScoreTeamA + 3;
+                onScoreA(ScoreTeamA);
+                break;
+
+            case R.id.twopointsAbttn:
+                ScoreTeamA = ScoreTeamA + 2;
+                onScoreA(ScoreTeamA);
+                break;
+
+            case R.id.onepointAbttn:
                 ScoreTeamA++;
                 onScoreA(ScoreTeamA);
                 break;
 
-            case R.id.FreeKickAbttn:
-                ScoreTeamA++;
-                onScoreA(ScoreTeamA);
-                break;
-
-            case R.id.PenaltyAbttn:
-                ScoreTeamA++;
-                onScoreA(ScoreTeamA);
-                break;
-
-            case R.id.GoalBbttn:
-                ScoreTeamB++;
+            case R.id.threepointsBbttn:
+                ScoreTeamB = ScoreTeamB + 3;
                 onScoreB(ScoreTeamB);
                 break;
 
-            case R.id.FreeKickBbttn:
-                ScoreTeamB++;
+            case R.id.twopointsBbttn:
+                ScoreTeamB = ScoreTeamB + 2;
                 onScoreB(ScoreTeamB);
                 break;
 
-            case R.id.PenaltyBbttn:
+            case R.id.onepointBbttn:
                 ScoreTeamB++;
                 onScoreB(ScoreTeamB);
                 break;
