@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="TextViewStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+
+        <item name="android:text">@string/sample_question</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:text">@string/submit</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">136dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">57dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonStyleLand" parent="Widget.AppCompat.Button">
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:text">@string/submit</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">136dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">37dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="RButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">37dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="RButtonStyleLand" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+    <style name="CheckBoxStyleLand" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="ButtonStyleCB" parent="Widget.AppCompat.Button">
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:text">@string/submit</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">136dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginLeft">77dp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonStyleCBLand" parent="Widget.AppCompat.Button">
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:text">@string/submit</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">136dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">220dp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+</resources>

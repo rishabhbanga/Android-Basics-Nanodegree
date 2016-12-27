@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz to Whiz</string>
+    <string name="welcome_text">Welcome to Quiz to Whiz</string>
+    <string name="start">Start</string>
+    <string name="about">about</string>
+    <string name="sample_question">Stub for verifying layout of Question text box in Quiz_1.xml</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
+    <string name="answer_3">Answer 3</string>
+    <string name="answer_4">Answer 4</string>
+    <string name="submit">SUBMIT</string>
+    <string name="thank_you">Thank you for play Quiz to Whiz</string>
+</resources>
