@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginLeft="4dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/topTitle"
+            style="@style/TextStyle"
+            android:text="@string/toppings"
+            android:layout_below="@id/name"/>
+
+        <CheckBox
+            android:id="@+id/top1"
+            style="@style/CheckBoxStyle"
+            android:text="@string/top1"
+            android:layout_below="@id/topTitle"/>
+
+        <CheckBox
+            android:id="@+id/top2"
+            style="@style/CheckBoxStyle"
+            android:text="@string/top2"
+            android:layout_below="@id/top1"/>
+
+        <TextView
+            android:id="@+id/quantTitle"
+            style="@style/TextStyle"
+            android:text="@string/quantity"
+            android:layout_below="@id/top2"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/quantlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@+id/quantTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/nbutton"
+                android:text="@string/ntext"
+                android:onClick="onDecr"
+                android:textStyle="bold"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/quantView"
+                style="@style/TextStyle"
+                android:text="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+            <Button
+                android:id="@+id/pbutton"
+                android:text="@string/ptext"
+                android:onClick="onIncr"
+                android:textStyle="bold"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Submit"
+            android:text="@string/order"
+            android:onClick="onSubmit"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantlayout"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/OrderTitle"
+            style="@style/TextStyle"
+            android:layout_below="@id/Submit"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/OrderView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/OrderTitle" />
+
+    </RelativeLayout>
+
+</ScrollView>
