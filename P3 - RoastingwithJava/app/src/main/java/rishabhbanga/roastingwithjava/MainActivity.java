@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity
         number = number + 1;
         if (number > 99)
         {
-            makeText(getApplicationContext(),"CAFFEINE ALERT!! You cannot have more than 99 coffees",Toast.LENGTH_SHORT).show();
+            makeText(getApplicationContext(),"HIGH CAFFEINE ALERT!! You cannot have more than 99 coffees",Toast.LENGTH_SHORT).show();
             return;
         }
         onDisplayQuant(number);
@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity
 
         if(addTopping_1)
         {
-            basePrice = basePrice + 1;
+            basePrice = basePrice + 0.49;
         }
 
         if(addTopping_2)
         {
-            basePrice = basePrice + 2;
+            basePrice = basePrice + 0.99;
         }
 
         return basePrice * number;
