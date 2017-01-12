@@ -4,9 +4,11 @@ This Repository contains all the Mobile applications created as part of Android 
 
 ## Project P1 - [Build a Single Screen App for local Business] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/UmeedNgo )
 
-[1]: https://github.com/rishabhbanga/Android-Basics-Nanodegree/blob/master/screenshots/P1-1.png "Umeed NGO's Landing Page"
+![alt-text-1](https://github.com/rishabhbanga/Android-Basics-Nanodegree/blob/master/Screenshots/P1-1.png "Umeed NGO's Landing Page")
 
 ## Project P2 - [Build a Score Keeper App] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/ScoreKeeper )
+
+![alt-text-2](https://github.com/rishabhbanga/Android-Basics-Nanodegree/blob/master/Screenshots/P2-1.png "Score Keeper's Landing Page")
 
 ## Android Developer Nanodegree
 [![Udacity][99]][100]
