@@ -2,11 +2,11 @@
 
 This Repository contains all the Mobile applications created as part of Android Developer Nanodegree Program by Google. 
 
-## Project P1 - [Build a Single Screen App for local Business] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/UmeedNgo )
+### Project P1 - [Build a Single Screen App for local Business] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/UmeedNgo )
 
 ![alt-text-1](https://github.com/rishabhbanga/Android-Basics-Nanodegree/blob/master/Screenshots/P1-1.png "Umeed NGO's Landing Page")
 
-## Project P2 - [Build a Score Keeper App] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/ScoreKeeper )
+### Project P2 - [Build a Score Keeper App] ( https://github.com/rishabhbanga/Android-Basics-Nanodegree/tree/master/ScoreKeeper )
 
 ![alt-text-2](https://github.com/rishabhbanga/Android-Basics-Nanodegree/blob/master/Screenshots/P2-1.png "Score Keeper's Landing Page")
 
